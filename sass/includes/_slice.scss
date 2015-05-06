@@ -1,0 +1,52 @@
+.slice {
+    display: table;
+    table-layout: fixed; // makes items equal sizes automatically
+    width: 100%;
+}
+
+.slice-autosize {
+    table-layout: auto;
+}
+
+.slice-item {
+    display: table-cell;
+    vertical-align: top;
+}
+
+@include phone() {
+    .content {
+        & > .slice-item { display: block; }
+    }
+    .slice-item {
+        display: block;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .tcontainer {
+        padding-top: 100px;
+    }
+
+    footer {
+        margin-top: 30%;
+    }
+}
+
+@include tablet() {
+    .top {
+        background: url(../img/t_header.png) top center no-repeat !important;
+    }
+    .container {
+        padding-top: 10px;
+    }
+    .introduction {
+
+        height: 70%;
+
+        h1 {
+            padding: 40% 0 !important;
+        }
+    }
+}

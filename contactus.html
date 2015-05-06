@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get in Touch with Us!</title>
+
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/meanmenu.css" media="all">
+
+     <link rel="icon" type="image/png" href="img/ico.png">
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    function initialize() {
+
+        var mapCanvas = document.getElementById('map-canvas');
+
+        var myLatlng = new google.maps.LatLng(37.665059, -122.078021);
+
+        var mapOptions = {
+            zoom: 16,
+            center: myLatlng,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            draggable: false,
+    };
+
+    // var marker = new google.maps.Marker({
+    //   position: myLatlng,
+    //   map: map,
+    //   title: 'ALOHA',
+    // });
+
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    };
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+<header>
+    <nav>
+        <img src="img/keolaloa_icon.png" alt="logo">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="top"></div>
+
+    <div class="tcontainer">
+    <div class="slice">
+        <div class="slice-item">
+            <div class="item">
+                <h1 data-sr="enter bottom and scale up 20% over 2s">Come by and say hello!</h1>
+            </div>
+        </div>
+        <div class="slice-item">
+            <div class="item right">
+                <a href="facebook.com/teoraroa" target="_blank"><img src="img/facebook3.png" alt=""></a>
+                <a href="#"><img src="img/twitter3.png" alt=""></a>
+                <a href="#"><img src="img/youtube3.png" alt=""></a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+    <div id="map-canvas"></div>
+
+    <p class="right">
+        24241 Mission Blvd | Hayward, California | (510) 432-6747
+    </p>
+
+<div class="tupperwear">
+    <div class="dues">
+        <h1 data-sr="enter bottom and scale up 20% over 2s">Pay Dues</h1>
+        <img src="http://placehold.it/300x150" alt="">
+    </div>
+</div>
+
+<footer>
+    <p class="center">&copy; Copyright 2015 Te Ora Roa and Ke Ola Loa Polynesian Dance Studio</p>
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="js/jquery.meanmenu.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('header nav').meanmenu();
+    });
+</script>
+
+<script src='js/scrollReveal.min.js'></script>
+    <script>
+      window.sr = new scrollReveal();
+    </script>
+
+</body>
+</html>

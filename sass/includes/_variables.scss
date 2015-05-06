@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:700|Merriweather);
+// font-family: 'Merriweather', serif;
+// font-family: 'Josefin Sans', sans-serif;
+
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+$teal: #ADEDB5;
+
+$headingf: 'Josefin Sans', sans-serif;
+$bodyf: 'Merriweather', serif;
+
+// spacing
+$space: 5px;
+$smspace: $space * 2;
+$medspace: $space * 3;
+$medmedspace: $space * 4;
+$lrgspace: $space * 5;
+$xlrgspace: $space * 10;
+
+// responsive
+    // global breaks
+    $tiny: 320;
+    $small: 480;
+    $phone: 640;
+    $phone-I: 768;
+    $tablet: 960;
+    $tablet-I: 1024;
+    $full: 1080;
+    $desktop: 1280;
+
+    // build media queries
+    @mixin tiny(){
+        @include respond-to($tiny) { @content; }
+    }
+    @mixin small(){
+        @include respond-to($small) { @content; }
+    }
+    @mixin phone(){
+        @include respond-to($phone) { @content; }
+    }
+    @mixin phone-I(){
+        @include respond-to($phone-I) { @content; }
+    }
+    @mixin tablet(){
+        @include respond-to($tablet) { @content; }
+    }
+    @mixin tablet-I(){
+        @include respond-to($tablet-I) { @content; }
+    }
+    @mixin full(){
+        @include respond-to($full) { @content; }
+    }
+    @mixin desktop(){
+        @include respond-to($desktop) { @content; }
+    }
